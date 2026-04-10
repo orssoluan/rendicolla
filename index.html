@@ -150,7 +150,7 @@
     <!-- NAVBAR / TOP BAR -->
     <nav class="fixed top-0 left-0 w-full z-50 bg-brand-dark/90 backdrop-blur-md border-b border-white/5 transition-all duration-300">
         <div class="max-w-[1700px] mx-auto px-6 md:px-10 lg:px-16 flex items-center justify-between h-20 md:h-24">
-            <img src="https://imgur.com/CmiJfyY.png" alt="Rendicolla" class="h-8 md:h-10 opacity-90 hover:opacity-100 transition-opacity">
+            <img src="https://imgur.com/sYocnK7.png" alt="Rendicolla" class="h-10 md:h-12 opacity-90 hover:opacity-100 transition-opacity">
             <a href="#diagnostico" class="hidden md:inline-flex items-center text-sm font-bold text-white bg-white/10 hover:bg-white/20 border border-white/10 px-5 py-2.5 rounded-lg transition-colors group">
                 Atendimento Corporativo
                 <i data-lucide="arrow-right" class="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
@@ -163,10 +163,18 @@
         
         <!-- Image Column Background (Absolute right side) -->
         <div class="absolute right-0 top-0 h-full w-full md:w-1/2 lg:w-[55%] z-0">
-            <div class="w-full h-full relative hero-mask bg-gray-900">
-                <div class="absolute inset-0 bg-cover bg-center transition-opacity duration-300 opacity-80" style="background-image: url('https://imgur.com/rT3ic0T.png');"></div>
-                <div class="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/50 to-transparent z-10"></div>
-                <span class="sr-only"></span>
+            <div class="w-full h-full relative hero-mask bg-brand-dark">
+                <!-- YouTube Iframe Background -->
+                <iframe 
+                    src="https://www.youtube.com/embed/vqyOJzA4juE?autoplay=1&mute=1&loop=1&playlist=vqyOJzA4juE&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1" 
+                    class="absolute inset-0 w-full h-full object-cover scale-[1.35] md:scale-150 opacity-80 pointer-events-none"
+                    frameborder="0" 
+                    allow="autoplay; encrypted-media" 
+                    allowfullscreen>
+                </iframe>
+                <!-- Blend Gradient para garantir contraste do texto à esquerda -->
+                <div class="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/40 to-transparent z-10 pointer-events-none"></div>
+                <span class="sr-only">Vídeo demonstrativo de alta velocidade e colagem em indústrias seriadas</span>
             </div>
         </div>
 
@@ -182,7 +190,7 @@
                         O menor custo de Hotmelt para <span class="text-brand-yellow">rotulagem e fechamento de embalagens.</span>
                     </h1>
                     <p class="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed font-light">
-                        Elimine as <strong>paradas de máquina</strong> e os riscos de <em>pop-open</em> com nossa formulação personalizada para o substrato da sua linha e que rende <strong>20% mais</strong> que fórmulas prontas.
+                        Elimine as <strong>paradas de máquina</strong> e os riscos de <em>pop-open</em> com nossa formulação personalizada para o substrato da sua linha e que rende <strong>20% mais</strong> que fórmulas prontas
                     </p>
                     
                     <a href="#diagnostico" class="inline-flex items-center justify-center bg-brand-green hover:bg-brand-greenHover text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-[0_0_20px_rgba(16,185,129,0.4)] mb-4 text-center w-full sm:w-auto group">
@@ -616,10 +624,10 @@
     </section>
 
     <!-- Footer Simples -->
-    <footer class="bg-[#020202] py-8 text-center border-t border-white/5">
-        <div class="container mx-auto px-3 md:px-6">
-            <img src="https://imgur.com/CmiJfyY.png" alt="Rendicolla" class="h-8 mx-auto mb-4 opacity-50 grayscale">
-            <p class="text-gray-600 text-xs">&copy; Rendicolla cola até ELEFANTE no teto</p>
+    <footer class="bg-[#020202] py-8 text-center border-t border-white/5 relative overflow-hidden">
+        <div class="container mx-auto px-3 md:px-6 relative z-10">
+            <img src="https://imgur.com/CmiJfyY.png" alt="Rendicolla" class="h-10 mx-auto mb-4 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer">
+            <p class="text-gray-500 text-xs font-semibold tracking-wider">&copy; RENDICOLLA COLA ATÉ ELEFANTE NO TETO</p>
         </div>
     </footer>
 
